@@ -12,8 +12,8 @@ class BankAccount
     @balance += amount
   end
   
-  def display_balance(account)
-    account.display
+  def display_balance
+    @balance
   end
   
   def valid?(account)
