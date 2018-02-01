@@ -12,6 +12,10 @@ class BankAccount
     @balance += amount
   end
   
+  def display_balance(account)
+    account.display
+  end
+  
   def valid?(account)
     account.status=="open" && account.balance>0 ? true : false
   end
