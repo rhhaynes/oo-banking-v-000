@@ -19,6 +19,10 @@ class Transfer
     end
   end
   
+  def reverse_transfer
+    
+  end
+  
   def valid?
     sender.valid? && receiver.valid? ? true : false
   end
