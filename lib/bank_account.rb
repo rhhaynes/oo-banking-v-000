@@ -12,12 +12,12 @@ class BankAccount
     @balance += amount
   end
   
-  def valid?
-    @status=="open" && @balance>0 ? true : false
+  def valid?(account)
+    account.status=="open" && account.balance>0 ? true : false
   end
   
-  def close_account
-    @status = 
+  def close_account(account)
+    account.status = 
   end
   
 end
